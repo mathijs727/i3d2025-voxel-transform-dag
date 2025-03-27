@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "dependencies": [
+    {
+      "name": "abseil",
+      "features": ["cxx17"]
+    },
+    "assimp",
+    "catch2",
+    "cli11",
+    "date",
+    "eastl",
+    "eigen3",
+    "fmt",
+    "freeimage",
+    "glew",
+    "glm",
+    "glfw3",
+    {
+      "name": "jasper",
+      "default-features": false
+    },
+    "libmorton",
+    "magic-enum",
+    "mio",
+    "nativefiledialog",
+    "nlohmann-json",
+    "robin-hood-hashing",
+    "spdlog",
+    "tbb",
+    {
+      "name": "imgui",
+      "features": [ "opengl3-binding", "glfw-binding" ]
+    },
+    "vulkan-memory-allocator",
+    "tracy"
+  ]
+}

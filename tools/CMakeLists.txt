@@ -1,0 +1,5 @@
+add_subdirectory("lib")
+add_subdirectory("voxelizer")
+add_subdirectory("svdag_encoding")
+add_subdirectory("transform_subset_comparison")
+add_subdirectory("ssvdag_fix_comparison")

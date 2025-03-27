@@ -1,0 +1,45 @@
+# Trying out Google OR-Tools for TSP solving. Not in vcpkg yet.
+third-party/or-tools/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Build directories and binary files
+build/
+build_python/
+build_python/
+python_build/
+python_ssvdag_build/
+python/tmp/**
+python/__pycache__/**
+out/
+out_linux/
+cmake-build-*/
+CMakeUserPresets.json
+**/*.df
+
+# IDE files
+.vs/
+.idea/
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*~
+enc_temp_folder/
+
+# OS Generated Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.Trash-*
+$RECYCLE.BIN/
+.TemporaryItems
+ehthumbs.db
+Thumbs.db
+CMakeSettings.json
