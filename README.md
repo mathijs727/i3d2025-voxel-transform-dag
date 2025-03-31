@@ -16,7 +16,6 @@ This code base utilizes various file formats to store the voxel structures. Most
 **.svdag** Providing compatability with the code base of [Symmetry-Aware SVDAG by Villanueva et al.](https://dl-acm-org.tudelft.idm.oclc.org/doi/abs/10.1145/2856400.2856420).
 **.ssvdag** Providing compatability with the code base of [Symmetry-Aware SVDAG by Villanueva et al.](https://dl-acm-org.tudelft.idm.oclc.org/doi/abs/10.1145/2856400.2856420). Can be displayed using our provided renderer.
 
-
 ### Tools
 Most of the code is contained in the `tools/lib/` folder. On top of this shared library, we build various tools:
 
@@ -30,6 +29,10 @@ The renderer is a (heavily) modified fork of the [HashDAG framework developed by
 Since it is CUDA based, you will need an Nvidia GPU to run the renderer.
 For more information on how to configure and run the renderer, please see the [readme in the renderer folder](renderer/README.md).
 
+### Most Interesting Files
+* `tool/lib/src/voxel/transform_dag_hierarchical.cpp` contains the implementation of our [subset] child order permutation transforms (see `constructTransformDAGHierarchical()`).
+* `tool/lib/src/voxel/find_translation.cpp` and `tool/lib/src/voxel/find_translation.cu` find matching subgrids under translation, symmetry, and axis permutation.
+* `tool/lib/src/voxel/transform_dag.cpp` contains the code to combine both into a single Transform-Aware SVDAG
 
 ## Building
 You will need to install the latest CUDA release as well as the [vcpkg package manager](https://vcpkg.io/en/getting-started.html).
