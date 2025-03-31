@@ -2,7 +2,7 @@
 This repository contains the code associated with the paper titled "Transform-Aware Sparse Voxel Directed Acyclic Graphs" which will be presented at the [I3D Conference 2025](https://i3dsymposium.org/2025/).
 The goal of this project is to store sparse binary voxel grids using as little memory as possible. Our method achieves an improved compression ratio over previous work.
 
-<center><img src="images/bistro_scooter_.png" width="50%" title="Screenshot" /></center>
+<center><img src="images/bistro_scooter.png" width="50%" title="Screenshot" /></center>
 
 ## Overview
 The code is split into the `tools` and `renderer` folder. These two code bases were developed separately, but merged into one repository for this project.
